@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /voorbeeld/
+Sitemap: https://northwind-digital.com/sitemap.xml

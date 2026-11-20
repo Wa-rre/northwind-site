@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="alternate" hreflang="nl" href="./">
+<link rel="alternate" hreflang="fr" href="fr/">
+<title>Dakwerken Voorbeeld | Dakwerker in Gent</title>
+<meta name="description" content="Dakwerker - Gent. Een dak dat weer jaren meekan">
+<style>
+:root{--accent:#9b2c2c;--accent-dark:#7c2323;--accent-soft:#f5eaea;
+--ink:#14181f;--body:#3d4652;--muted:#6b7480;--line:#e6e8ec;--bg:#ffffff;--bg-alt:#f6f7f9;--radius:14px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{color:var(--ink);line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:12px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lead-text{font-size:19px;color:var(--muted);max-width:620px}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+.banner a.sitelink{color:#fff;font-weight:700;margin-left:6px}
+.banner{background:#14181f;color:#cfd4da;font-size:13px;padding:8px 0;text-align:center}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;font-size:19px;color:var(--ink);letter-spacing:-.01em}
+.logo{width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center}
+.logo svg.i{width:22px;height:22px}
+.links{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
+.links a{text-decoration:none;color:var(--body)}
+.links a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;
+ font-size:16px;padding:14px 22px;border-radius:10px;transition:background .15s,transform .15s;white-space:nowrap}
+.btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
+.btn svg.i{width:19px;height:19px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent);background:transparent}
+.links .btn{padding:10px 16px;font-size:15px;color:#fff}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--accent-soft),#fff 85%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--accent) 1px,transparent 1px);
+ background-size:22px 22px;opacity:.07;mask-image:linear-gradient(180deg,#000,transparent 80%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center;padding-top:80px;padding-bottom:88px}
+.hero h1{font-size:clamp(36px,5.4vw,60px);margin:14px 0 18px;letter-spacing:-.035em}
+.hero .lead-text{margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;font-size:15px;color:var(--muted)}
+.chips span{display:inline-flex;align-items:center;gap:8px}
+.chips svg.i{color:var(--accent);width:18px;height:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:0 24px 48px -24px rgba(20,24,31,.25)}
+.card .badge{width:56px;height:56px;border-radius:14px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;margin-bottom:18px}
+.card .badge svg.i{width:28px;height:28px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{color:var(--muted);margin-bottom:20px}
+.card .tel{display:block;font-size:28px;font-weight:800;color:var(--ink);text-decoration:none;letter-spacing:-.01em;margin-bottom:18px}
+.card .btn{width:100%;justify-content:center}
+.card ul{list-style:none;padding:0;margin-top:20px;border-top:1px solid var(--line);padding-top:16px;font-size:15px}
+.card li{display:flex;gap:10px;padding:5px 0;color:var(--body)}
+.card li svg.i{color:var(--accent);width:18px;height:18px;margin-top:4px}
+
+/* sections */
+section.block{padding:96px 0}
+section.alt{background:var(--bg-alt)}
+.head{margin-bottom:44px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;gap:20px;transition:border-color .15s,box-shadow .15s}
+.svc:hover{border-color:var(--accent);box-shadow:0 12px 32px -18px rgba(20,24,31,.3)}
+.svc .ic{width:52px;height:52px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.svc h3{font-size:19px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:16px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why>div{padding:28px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.why .ic{color:var(--accent);margin-bottom:14px}
+.why .ic svg.i{width:28px;height:28px}
+.why h3{font-size:19px;margin-bottom:6px}
+.why p{color:var(--muted);font-size:16px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s}
+.steps>div{position:relative;padding-top:64px}
+.steps>div::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:46px;height:46px;border-radius:50%;
+ background:var(--accent);color:#fff;font-weight:800;font-size:19px;display:grid;place-items:center}
+.steps>div:not(:last-child)::after{content:"";position:absolute;top:23px;left:62px;right:-14px;height:2px;background:var(--line)}
+.steps h3{font-size:19px;margin-bottom:6px}
+.steps p{color:var(--muted);font-size:16px}
+
+.band{background:var(--accent);color:#fff;border-radius:22px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+ background-image:radial-gradient(circle at 85% 20%,rgba(255,255,255,.16),transparent 45%)}
+.band h2{color:#fff;margin-bottom:6px}
+.band p{opacity:.9;font-size:18px}
+.band .btn{background:#fff;color:var(--ink)}
+.band .btn:hover{background:#f1f1f1}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
+.contact .item{display:flex;gap:16px;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.contact .ic{width:46px;height:46px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.contact small{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contact a,.contact strong{font-size:18px;font-weight:700;color:var(--ink);text-decoration:none}
+.contact .hours div{font-weight:600;color:var(--ink)}
+
+/* language switch */
+.langs{display:flex;align-items:center;gap:2px;font-size:14px;font-weight:700}
+.langs svg.i{width:17px;height:17px;color:var(--muted);margin-right:4px}
+.langs a{text-decoration:none;color:var(--muted);padding:6px 7px;border-radius:7px;text-transform:uppercase;letter-spacing:.04em}
+.langs a:hover{color:var(--accent)}
+.langs a[aria-current]{color:var(--ink);background:var(--bg-alt)}
+.navr{display:flex;align-items:center;gap:22px}
+
+/* appointment */
+.book{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:start}
+.book .tel-line{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:20px;font-weight:800;color:var(--ink);text-decoration:none}
+.book .tel-line svg.i{color:var(--accent)}
+.book-form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;display:grid;gap:16px;
+ box-shadow:0 24px 48px -28px rgba(20,24,31,.25)}
+.book-form .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.book-form label{display:grid;gap:6px;font-size:14px;font-weight:700;color:var(--ink)}
+.book-form input,.book-form select,.book-form textarea{font:inherit;font-size:16px;font-weight:400;color:var(--ink);padding:12px 14px;
+ border:1.5px solid var(--line);border-radius:10px;background:#fff;width:100%}
+.book-form input:focus,.book-form select:focus,.book-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.book-form .btn{justify-content:center;border:0;cursor:pointer;font-family:inherit}
+.book-form .small{font-size:13px;color:var(--muted)}
+.book-done{padding:14px 16px;border-radius:10px;font-size:15px;font-weight:600}
+.book-done.ok{background:var(--accent-soft);color:var(--ink)}
+.book-done.warn{background:#fdecea;color:#8a1c1c}
+
+footer{border-top:1px solid var(--line);padding:28px 0 100px;font-size:14px;color:var(--muted);text-align:center}
+.callbar{display:none}
+
+@media (max-width:900px){
+ .links{display:none}
+ .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:48px;padding-bottom:56px}
+ .grid,.why,.steps,.contact,.book,.book-form .row2{grid-template-columns:1fr}
+ .book{gap:28px}
+ .steps>div::after{display:none}
+ section.block{padding:64px 0}
+ .band{padding:32px}
+ .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;justify-content:center;
+  box-shadow:0 10px 30px rgba(20,24,31,.35);padding:16px;font-size:17px}
+}
+@media (max-width:480px){.wrap{padding:0 18px}.book-form{padding:22px}.langs a{padding:5px}.nav .wrap{height:64px}.brand span{font-size:17px}.card{padding:24px}}
+</style>
+</head>
+<body>
+<div class="banner"><div class="wrap">Voorbeeldwebsite, niet publiek vindbaar. Gemaakt door Northwind Digital als voorstel voor Dakwerken Voorbeeld. <a class="sitelink" href="https://northwind-digital.com" target="_blank" rel="noopener">northwind-digital.com</a></div></div>
+
+<nav class="nav"><div class="wrap">
+ <a class="brand" href="#top"><span class="logo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span>Dakwerken Voorbeeld</span></a>
+ <div class="links">
+  <a href="#diensten">Diensten</a><a href="#afspraak">Afspraak</a><a href="#contact">Contact</a>
+  <a class="btn" href="tel:+3290000000"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0900 00 000</a>
+ </div>
+ <div class="langs"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><a href="./" hreflang="nl" lang="nl" title="Nederlands" aria-current="true">nl</a><a href="fr/" hreflang="fr" lang="fr" title="Français">fr</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div>
+  <span class="eyebrow">Dakwerker &middot; Gent</span>
+  <h1>Een dak dat weer jaren meekan</h1>
+  <p class="lead-text">Vakwerk voor particulieren en bedrijven in Gent en omgeving. Bel ons voor een vrijblijvende offerte.</p>
+  <div class="actions">
+   <a class="btn" href="tel:+3290000000"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Bel nu: 0900 00 000</a>
+   <a class="btn ghost" href="#afspraak"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Afspraak maken</a>
+  </div>
+  <div class="chips"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Persoonlijk contact</span><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Duidelijke afspraken</span><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Netjes afgewerkt</span></div>
+ </div>
+ <aside class="card">
+  <div class="badge"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+  <h3>Vrijblijvende offerte</h3>
+  <p>Bel ons en vertel kort wat u nodig heeft. We maken een duidelijke prijsopgave.</p>
+  <a class="tel" href="tel:+3290000000">0900 00 000</a>
+  <a class="btn" href="tel:+3290000000"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Gratis offerte</a>
+  <ul>
+   <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gent en omgeving</span></li>
+   <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>ma–vr 08:00–17:00</span></li>
+  </ul>
+ </aside>
+</div></header>
+
+<section class="block" id="diensten"><div class="wrap">
+ <div class="head"><span class="eyebrow">Diensten</span><h2>Wat we voor u doen</h2><p class="lead-text">Een greep uit onze diensten.</p></div>
+ <div class="grid">
+  <div class="svc"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><h3>Dakherstellingen</h3><p>Lekken, losse pannen of stormschade: snel en degelijk hersteld.</p></div></div>
+  <div class="svc"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><h3>Nieuwe daken</h3><p>Nieuw hellend of plat dak, met materialen die jaren meegaan.</p></div></div>
+  <div class="svc"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><h3>Dakisolatie</h3><p>Een goed geïsoleerd dak houdt de warmte binnen en de energiefactuur laag.</p></div></div>
+  <div class="svc"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><h3>Goten en afvoeren</h3><p>Dakgoten en afvoeren gereinigd, hersteld of vernieuwd.</p></div></div>
+ </div>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+ <div class="head"><h2>Waarom klanten voor ons kiezen</h2></div>
+ <div class="why">
+  <div><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Persoonlijk contact</h3><p>U spreekt rechtstreeks met de vakman, geen callcenter.</p></div>
+  <div><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Duidelijke afspraken</h3><p>Vooraf een heldere offerte, zonder verrassingen achteraf.</p></div>
+  <div><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><h3>Netjes afgewerkt</h3><p>We werken zorgvuldig en laten alles proper achter.</p></div>
+ </div>
+</div></section>
+
+<section class="block" id="werkwijze"><div class="wrap">
+ <div class="head"><span class="eyebrow">Werkwijze</span><h2>Zo werkt het</h2></div>
+ <div class="steps"><div><h3>Neem contact op</h3><p>Bel of mail ons met uw vraag.</p></div><div><h3>Offerte op maat</h3><p>We bekijken wat nodig is en geven een duidelijke prijs.</p></div><div><h3>Uitvoering</h3><p>We plannen het werk in en voeren het vakkundig uit.</p></div></div>
+</div></section>
+
+<section class="block" id="afspraak"><div class="wrap">
+ <div class="book">
+  <div><span class="eyebrow">Afspraak</span><h2>Maak een afspraak</h2><p class="lead-text">Laat weten wanneer het u past. We bellen u terug om de afspraak te bevestigen.</p>
+   <a class="tel-line" href="tel:+3290000000"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0900 00 000</a></div>
+  <form class="book-form" id="book" novalidate data-mode="demo" data-email=""
+        data-sms="" data-text='{"call_only": "Bel ons op 0900 00 000 om een afspraak te maken.", "demo_done": "Dit is een voorbeeld, er is niets verstuurd. Op uw echte website komt deze aanvraag meteen bij u binnen, met alle gegevens van de klant.", "labels": {"date": "Gewenste dag", "email": "E-mail", "job": "Soort werk", "msg": "Korte omschrijving", "name": "Naam", "part": "Voorkeur", "phone": "Telefoon", "where": "Adres of gemeente van het werk"}, "mail_done": "Uw e-mailprogramma opent met de aanvraag. Verstuur het bericht om de afspraak aan te vragen.", "missing": "Vul uw naam en telefoonnummer in.", "sms_done": "Uw sms-app opent met de aanvraag. Verstuur het bericht om de afspraak aan te vragen.", "subject": "Afspraakaanvraag via de website"}'>
+   <div class="row2">
+    <label>Naam<input name="name" autocomplete="name" required></label>
+    <label>Telefoon<input name="phone" type="tel" autocomplete="tel" required></label>
+   </div>
+   <label>E-mail (optioneel)<input name="email" type="email" autocomplete="email"></label>
+   <div class="row2">
+    <label>Soort werk<select name="job"><option>Dakherstellingen</option><option>Nieuwe daken</option><option>Dakisolatie</option><option>Goten en afvoeren</option><option>Iets anders</option></select></label>
+    <label>Adres of gemeente van het werk<input name="where" autocomplete="address-level2"></label>
+   </div>
+   <div class="row2">
+    <label>Gewenste dag<input name="date" type="date"></label>
+    <label>Voorkeur<select name="part"><option>Maakt niet uit</option><option>Voormiddag</option><option>Namiddag</option></select></label>
+   </div>
+   <label>Korte omschrijving<textarea name="msg" rows="3"></textarea></label>
+   <button class="btn" type="submit"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Afspraak aanvragen</button>
+   <p class="small">We gebruiken uw gegevens alleen om u te contacteren over deze afspraak.</p>
+   <div class="book-done" role="status" hidden></div>
+  </form>
+ </div>
+</div></section>
+
+<section class="block alt" id="contact"><div class="wrap">
+ <div class="band">
+  <div><h2>Klaar om te starten?</h2><p>Bel ons vandaag nog voor een vrijblijvende offerte.</p></div>
+  <a class="btn" href="tel:+3290000000"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0900 00 000</a>
+ </div>
+ <div class="contact">
+  <div class="item"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><small>Telefoon</small><a href="tel:+3290000000">0900 00 000</a></div></div>
+  <div class="item"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small>Adres</small>
+   <strong>Voorbeeldstraat 1, 9000 Gent</strong></div></div>
+  <div class="item"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="hours"><small>Openingsuren</small>
+   <div>ma–vr 08:00–17:00</div></div></div>
+  <div class="item"><div class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div><div><small>Werkgebied</small><strong>Gent en omgeving</strong></div></div>
+ </div>
+</div></section>
+
+<footer><div class="wrap">Wilt u dat deze voorbeeldpagina verwijderd wordt? Bel of mail Northwind Digital: +1 260-408-8930 (snel, eenvoudig, 24/7), +32 488 22 29 43 (persoonlijk), info@northwind-digital.com.<br><a href="https://northwind-digital.com" target="_blank" rel="noopener">northwind-digital.com</a></div></footer>
+<a class="btn callbar" href="tel:+3290000000"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Bel nu: 0900 00 000</a>
+<script>
+(function () {
+  var f = document.getElementById("book"); if (!f) return;
+  var t = JSON.parse(f.dataset.text), out = f.querySelector(".book-done"), d = f.elements.date, n = new Date();
+  d.min = new Date(n.getTime() - n.getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    function v(k) { return (f.elements[k].value || "").trim(); }
+    function say(text, kind) { out.textContent = text; out.className = "book-done " + kind; out.hidden = false; }
+    if (!v("name") || !v("phone")) { say(t.missing, "warn"); return; }
+    var lines = [];
+    ["name", "phone", "email", "job", "where", "date", "part", "msg"].forEach(function (k) {
+      if (v(k)) lines.push(t.labels[k] + ": " + v(k));
+    });
+    var body = lines.join("\n");
+    if (f.dataset.mode === "demo") { say(t.demo_done, "ok"); return; }       // the demo never sends anything
+    if (f.dataset.email) {
+      location.href = "mailto:" + f.dataset.email + "?subject=" + encodeURIComponent(t.subject) + "&body=" + encodeURIComponent(body);
+      say(t.mail_done, "ok");
+    } else if (f.dataset.sms) {
+      location.href = "sms:" + f.dataset.sms + "?body=" + encodeURIComponent(t.subject + "\n" + body);
+      say(t.sms_done, "ok");
+    } else { say(t.call_only, "ok"); }
+  });
+})();
+</script>
+</body>
+</html>
